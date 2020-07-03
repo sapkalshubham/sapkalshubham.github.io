@@ -1,0 +1,196 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	background-color:  rgb(230, 230, 255)
+}
+.outer{
+	width: 80%;
+	margin-left: 10%;
+	padding: 20px;
+}
+.welcome{
+	width: 230px;
+	height: 330px;
+	background-color: white;
+	text-align: center;
+}
+.right{
+	width: 250px;
+	height: 330px;
+	background-color: white;
+	text-align: center;
+}
+.right a:hover{
+	color:rgb(0, 153, 255) ;
+	background-color: white;
+}
+
+.welcome-1{
+	width: 230px;
+	height: 400px;
+	background-color: white;
+	text-align: center;
+}
+.centre{
+	width: 550px;
+	margin-left: 410px;
+}
+.start{
+	margin-top: -18px;
+	background-color: white;
+	height: 100px;
+}
+.start ul li{
+	width: 500px;
+}
+.lst li{
+	padding-left: 85px;
+}
+.lst-1 li{
+	margin-left: 10px;
+	padding-left: 15px;
+}
+.feed{
+	
+	background-color: white;
+	height: 450px;
+	box-shadow: 4px 4px rgb(166, 166, 166); 
+	border-top: 1px solid rgb(217, 217, 217); 
+	border-left: 2px solid rgb(217, 217, 217);
+	margin-bottom: 10px;
+}
+.feed a{
+	color: black;
+	font-weight: bold;
+}
+.feed a:hover{
+	color: rgb(0, 153, 255);
+	background-color: white;
+}
+.details{
+	width: 500px;
+	height:150px;
+	margin-left: 25px;
+	margin-top: 20px;
+	border-top: 1px solid rgb(217, 217, 217); 
+	border-bottom: 1px solid rgb(217, 217, 217); 
+	border-left: 1px solid rgb(217, 217, 217); 
+	border-right: 1px solid rgb(217, 217, 217); 
+}
+
+.Discover a:hover{
+	color: rgb(0, 153, 255);
+	background-color: white;
+}
+.welcome-1 a:hover{
+   background-color: rgb(217, 217, 217);
+}
+.navigation-bar
+{
+	 
+	width: 100%;
+	height: 50px;
+	background-color: rgb(0, 0, 77);
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+}
+.logo{
+	float: left;
+	width:35px;
+	height: 35px;
+	margin-left: 100px;
+	margin-top: 8px;
+	border-radius: 21%;
+
+}
+.pic{
+
+	float: left;
+	width:55px;
+	height: 55px;
+	margin-left: 20px;
+	margin-top: 10px;
+	border-radius: 50%;
+	margin-right: 10px;
+
+
+}
+.search{
+	float: left;
+	border-radius: 3px;
+	background-color: rgb(230, 230, 255);
+	width: 250px; 
+	height: 30px;
+	margin-left: 10px;
+	padding-left: 10px;
+	margin-top: 8px;
+}
+.search-btn{
+	float: left;
+	height: 25px;
+	margin-left: 10px;
+	margin-top: 13px;
+	border-radius: 21%;
+}
+
+
+
+.dropbtn {
+ 
+    margin-left: 50px;
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+	margin-top: 2px;
+	margin-left: 45px;
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 300px;
+  
+}
+.dropdown-content a {
+    color: rgb(0, 102, 153);
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: rgb(204, 238, 255);
+}
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+.dropdown:hover .dropbtn {
+	background-color: grey;
+}
+.Links{
+	padding-top: 10px;
+	color: rgb(140, 140, 140)
+}
+.Links a:hover{
+	background-color:rgb(230, 230, 230);
+}
+.sections{
+	margin-top: 5px; 
+	background-color: rgb(242, 242, 242); 
+	text-align: center; 
+	border-top:2px solid rgb(217, 217, 217);
+	border-bottom:2px solid rgb(217, 217, 217);
+
+ }
