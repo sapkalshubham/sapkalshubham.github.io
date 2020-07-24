@@ -1,0 +1,33 @@
+*{
+	padding:0;
+	margin:0;
+}
+.sidebar{
+	float: left;
+	width: 200px;
+	height: 100%;
+	background-color: rgb(47, 47, 30);
+}
+.sidebar ul a{
+	display: block;
+	
+	width: 100%;
+	line-height: 50px;
+	padding-left: 10px;
+	text-decoration: none;
+	box-sizing: border-box;
+	color: white;
+	font-size: 20px;
+	border-bottom: 1px solid rgb(204, 204, 179);
+}
+.header{
+	width: 100%;
+	height: 100px;
+	text-align: center;
+	border-bottom: 1px solid rgb(204, 204, 179);
+}
+.heading{
+	font-size: 50px;
+	font-weight: bold;
+	margin-left: 30px;
+}
