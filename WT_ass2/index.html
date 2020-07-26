@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+    <head>
+        <title>Event registration Website</title>
+       
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+       <style>
+           .navbar{
+               margin-top: -30px;
+           }
+           .jumbotron{
+               height: 100px;
+               padding-top: 20px;
+            }
+            .c1{
+                border: 1px solid rgba(0, 0, 0, 0.219);
+                padding: 20px;
+                margin-top: 50px;
+                border-radius: 5px;
+            }
+            .c1:hover{
+                box-shadow: 0px 0px 10px 0.5px lightblue;
+            }
+
+            #demo1{
+                margin-top: 50px;
+            }
+            .carousel-inner img {
+                width: 100%;
+                height: 100%;
+            }
+            #home{
+                width: 100%;
+                margin: 0px auto;
+                margin-top: 10px;
+            }
+            .i1{
+                position: relative;
+                bottom: -20px;
+                left: 0px;
+                width: 100%;
+                background-color: rgba(128, 128, 128, 0.205);
+                color: black;
+                text-align: center;
+                }
+                .footer1{
+                position: relative;
+                left: 0;
+                bottom: 0px;
+                width: 100%;
+                background-color: rgba(128, 128, 128, 0.205);
+                color: black;
+                text-align: center;
+                }
+                
+                
+       </style>
+    </head>
+    <body>
+        <div class="jumbotron text-center" style="background-color: red; color: white;"><h1 style="margin-bottom: 20px;">Codaddict</h1></div>
+       
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="nav navbar-nav nav-pills" role="tablist">
+                <li class="nav-item"><a class="nav-link active" data-toggle="pill" href="#" onclick="initial()">Home</a></li>
+                <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#" onclick="initial1()">Registration Form</a></li>
+                <li class="nav-item"><a class="nav-link" id="ii2" data-toggle="pill" href="#" onclick="initial2()">Entries</a></li>
+              </ul>
+            </div>  
+          </nav>
+       
+        
+        <div id="home">
+            
+              <div class="well well-lg">
+            <p>
+                <h4>Coddadict is an online competitve coding platform to hone your skills in coding. In today's competitve world it is very important for all of us to be upto date with the current coding practices. We here at Codaddict have made an environment for individuals interested in coding to practise and learn.</h4>
+            </p>
+            <p>
+                
+            </p>
+        </div>
+
+        <div class="well well-lg">
+ 
+        <h4>
+                    <p>Coddadict has come up with an amzing opportunity for all the coders out there to test their mettle. Coddadict will be conducting a coding competiton on 5th of August. The exam will be of a duration of 3 hours.</p>
+                    <p>3 questions will be given to you for which you have to suggest solutions through your code. <br> There is no barrier on which language you use to develop your code.</p>
+                    <p>3 winners will be selected and will be given prizes as follows :<br>
+                    <ul>
+                        <li>1st Position : $1000 </li>
+                        <li>2nd Position : $700 </li>
+                        <li>3rd Position : $500 </li>
+                    </ul>
+                </p>
+                </h4>            
+
+        </div>
+        <div id="demo" class="carousel slide" data-ride="carousel">
+
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                  <li data-target="#demo" data-slide-to="0" class="active"></li>
+                  <li data-target="#demo" data-slide-to="1"></li>
+                  <li data-target="#demo" data-slide-to="2"></li>
+                </ul>
+                
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="1.jpg" alt="Los Angeles" width="600" height="400">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="2.jpg" alt="Chicago" width="600" height="400">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="3.jpg" alt="New York" width="600" height="400">
+                  </div>
+                </div>
+                
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                </a>
+              </div>
+              
+                <footer class="jumbotron text-center" style="bottom:0px">
+                    <!-- <div class="container-fluid"> -->
+                        <p>Contact Us : 9858757476</p>
+                        Email:
+                        <a href="mailto:sksapkal@mitaoe.ac.in">sksapkal@mitaoe.ac.in</a></p>
+                    <!-- </div> -->
+                </footer>
+            </div>
+        <div id="register_form">
+            
+            <div class="container" style="margin-left: 30%;">
+                <div class="col-lg-6 m-auto d-block" style="background-color: lightblue;">
+                    <div class="c1">
+                        <form id="form_register">
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="fname" placeholder="Enter first name" id="i1" required>                      
+                                <span id="alt1" class="text-danger font-weight-bold"> </span>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="lname" placeholder="Enter last name" id="i2" required>                   
+                                <span id="alt2" class="text-danger font-weight-bold"> </span>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" name="email" placeholder="Enter email" id="i3" required>
+                                <span id="alt3" class="text-danger font-weight-bold"> </span>
+                            </div>
+                            <div class="form-group">
+                                <!-- <div class="form-check-inline"> -->
+                                    <b>Gender :</b>
+                                     <input type="radio" style="margin-left: 10px;" name="gender" id="i4" value="Male">Male
+                                <!-- </div>
+                                <div class="form-check-inline"> -->
+                                    <input type="radio" style="margin-left: 10px;" name="gender" id="i4" value="Female">Female
+                                    <input type="radio" style="margin-left: 10px;" name="gender" id="i4" value="Other">Other
+                                <!-- </div> -->
+                                <span id="alt4" class="text-danger font-weight-bold"> </span>  
+                            </div>
+                            <div class="form-group">
+                                <label for="demo_overview">Choose City</label>
+                                <select class="form-control" data-role="select-dropdown" id="i5" data-profile="minimal" required>
+                                    <option value="Pune">Pune</option>
+                                    <option value="Mumbai">Mumbai</option>
+                                    <option value="Delhi">Nagpur</option>
+                                    <option value="Delhi">Nashik</option>
+                                 </select>
+                                 <span id="alt5" class="text-danger font-weight-bold"> </span>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" class="form-control" name="phone" placeholder="Enter Mobile Number" id="i6" required>
+                                <span id="alt6" class="text-danger font-weight-bold"> </span>
+                            </div>             
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                      <input type="checkbox" class="form-check-input" id="i7" style="padding-left: 10px;" required>I have participated in a coding competiton before.
+                                    </label>
+                                  </div>
+                                  <span id="alt7" class="text-danger font-weight-bold"> </span>
+                            </div>
+                            <input type="button" onclick="return initial3()" class="btn btn-primary" value="Submit">
+                            
+                            
+                        </form>
+                    </div>
+                    
+                </div>
+                
+                
+                   
+            </div>
+            <div>
+                <div class="i1">
+                    <p>Contact Us : 9858757476</p>
+                        Email:
+                        <a href="mailto:sksapkal@mitaoe.ac.in">sksapkal@mitaoe.ac.in</a></p>
+              </div>
+            </div>
+                
+                    
+        </div>
+        
+        <div id="registrant_list">
+            
+            <div class="container-fluid">
+                <div class="table-responsive">
+                    <div id="demo1"></div>
+                </div>
+            
+            </div>
+            <div class="footer1">
+                <div class="container-fluid">
+                   <p>Contact Us : 9858757476</p>
+                        Email:
+                        <a href="mailto:sksapkal@mitaoe.ac.in">sksapkal@mitaoe.ac.in</a></p>
+                    </div>
+              </div>
+        </div>
+        
+        
+    <script>
+        var today = new Date();
+        var t = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+            var a=[
+            
+                ];
+            var x = document.getElementById("home");
+            var y= document.getElementById("register_form");
+            var z= document.getElementById("registrant_list");
+            x.style.display="block";
+                y.style.display="none";
+                z.style.display="none";
+        function initial(){
+            if(x.style.display==="none")
+            {
+                x.style.display="block";
+                y.style.display="none";
+                z.style.display="none";
+            }
+        }
+        function initial1(){
+            if(y.style.display==="none")
+            {
+                x.style.display="none";
+                y.style.display="block";
+                z.style.display="none";
+            }
+        }
+        function initial2(){
+            if(z.style.display==="none")
+            {
+                x.style.display="none";
+                y.style.display="none";
+                z.style.display="block"; 
+                if(a.length == 0)
+                {
+                    document.getElementById("demo1").innerHTML="<div class='well well-lg' style='text-align:center;'><h2 style='color:red;'>Congratulations! You are the first to register.</h2></div>";
+                }
+                else{
+                    var text;
+                    text= "<table class='table table-striped table-bordered table-hover'><thead class='thead-dark'>";
+                    text=text + "<tr><th>First Name</th><th>Last Name</th><th>Email</th><th>Gender</th><th>City</th><th>Phone</th><th>Booking Time</th></tr></thead><tbody>";
+                    for(i=0;i<a.length;i++)
+                    {
+                        text= text + "<tr><td>" + a[i].fname + "</td><td>" + a[i].lname + "</td><td>" + a[i].email + "</td><td>" + a[i].gender + "</td><td>" + a[i].city + "</td><td>" + a[i].phone + "</td><td>" + a[i].time + "</td></tr>";
+                    }
+                    text += "</tbody></table>";
+                    document.getElementById("demo1").innerHTML=text;
+                }
+                
+            }
+            
+        }
+        function initial3()
+        {   
+            var b,c,d,f,g,e;
+            b=document.getElementById("i1").value;
+            c=document.getElementById("i2").value;
+            d=document.getElementById("i3").value;
+            f=document.getElementById("i5").value;
+            g=document.getElementById("i6").value;
+            e=document.getElementById("i7").checked;
+            const rbs = document.querySelectorAll('input[name="gender"]');
+            let selectedValue;
+            for (const rb of rbs) {
+                if (rb.checked) {
+                    selectedValue = rb.value;
+                    break;
+                }
+            }
+    
+            if(b == ""){
+				document.getElementById('alt1').innerHTML =" **Please fill the Last Name field";
+				return false;
+			}
+            else if((b.length <= 2) || (b.length > 20)) {
+				document.getElementById('alt1').innerHTML =" **First Name length must be between 2 and 20";
+                return false;
+			}
+            else if(!isNaN(b)){
+				document.getElementById('alt1').innerHTML =" **only characters are allowed";
+				return false;
+			}
+            else{
+                document.getElementById('alt1').innerHTML ="";
+            }
+            if(c == ""){
+				document.getElementById('alt2').innerHTML =" **Please fill the Last Name field";
+				return false;
+			}
+            else if((c.length <= 2) || (c.length > 20)) {
+				document.getElementById('alt2').innerHTML =" **Last Name length must be between 2 and 20";
+                return false;
+			}
+            else if(!isNaN(c)){
+				document.getElementById('alt2').innerHTML =" **only characters are allowed";
+				return false;
+			}
+            else{
+                document.getElementById('alt2').innerHTML ="";
+            }
+
+            
+
+            var at="@"
+            var dot="."
+            var lat=d.indexOf(at)
+            var lstr=d.length
+            var ldot=d.indexOf(dot)
+            if(d == "")
+            {
+                document.getElementById('alt3').innerHTML ="**Please enter E-mail ID";
+                return false;
+            }
+            if (d.indexOf(at)==-1){
+                document.getElementById('alt3').innerHTML ="**Invalid E-mail ID";
+                return false;
+            }
+            else if (d.indexOf(at)==-1 || d.indexOf(at)==0 || d.indexOf(at)==lstr){
+                document.getElementById('alt3').innerHTML ="**Invalid E-mail ID";
+                return false;
+            }
+            else if (d.indexOf(dot)==-1 || d.indexOf(dot)==0 || d.indexOf(dot)==lstr){
+                document.getElementById('alt3').innerHTML ="**Invalid E-mail ID";
+                return false;
+            }
+            else if (d.indexOf(at,(lat+1))!=-1){
+                document.getElementById('alt3').innerHTML ="**Invalid E-mail ID";
+                return false;
+            }
+            else if (d.substring(lat-1,lat)==dot || d.substring(lat+1,lat+2)==dot){
+                document.getElementById('alt3').innerHTML ="**Invalid E-mail ID";
+                return false;
+            }
+            else if (d.indexOf(dot,(lat+2))==-1){
+                document.getElementById('alt3').innerHTML ="**Invalid E-mail ID";
+                return false;
+            }
+            else if (d.indexOf(" ")!=-1){
+                document.getElementById('alt3').innerHTML ="**Invalid E-mail ID";
+                return false;
+            }
+            else
+            {
+                document.getElementById('alt3').innerHTML ="";
+            }
+
+            if(selectedValue == null)
+            {
+                document.getElementById('alt4').innerHTML =" **Select Your Gender";
+                return false;
+            }
+            else{
+                document.getElementById('alt4').innerHTML ="";
+            }
+
+            if(g == ""){
+				document.getElementById('alt6').innerHTML =" **Please fill the Mobile Number field";
+				return false;
+			}
+			if(isNaN(g)){
+				document.getElementById('alt6').innerHTML =" **User must write digits only not characters";
+				return false;
+			}
+			if(g.length!=10){
+				document.getElementById('alt6').innerHTML =" **Please enter a 10 digit number";
+				return false;
+			}
+            else{
+                document.getElementById('alt6').innerHTML ="";
+            }
+            
+           
+            if(e == false)
+            {
+                document.getElementById('alt7').innerHTML =" **Required";
+				return false;
+            }
+            else{
+                document.getElementById('alt7').innerHTML ="";
+            }
+
+            
+            var to = new Date();
+            var h = to.getHours() + ":" + to.getMinutes() + ":" + to.getSeconds();
+            var k={fname: b, lname: c, email: d, gender: selectedValue, city: f, phone: g, time: h}
+            a.push(k);
+            document.getElementById("form_register").reset();
+            
+        }
+    </script>
+    </body>
+</html>
